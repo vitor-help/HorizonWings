@@ -113,26 +113,25 @@ Route::get('/auth/linkedin/calback', function(){
     return redirect('/home');
 });
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
-
-
-
-
-
-
-
-
-
+#DAQUI PRA BAIXO É NÓIS
 
 Route::get('/', function () {
     if(auth()->user()){
         auth()->user()->assignRole('admin');
     }
-    return view('welcome');
+    return view('index');
 });
 
-Auth::routes();
+Route::get('/index2', function () {
+    if(auth()->user()){
+        auth()->user()->assignRole('admin');
+    }
+    return view('index2');
+});
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
