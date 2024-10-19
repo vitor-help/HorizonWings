@@ -18,8 +18,8 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <ul class="topbar-others-options">
-                        <li><a href="login.html">Entrar</a></li>
-                        <li><a href="register.html">Cadastre-se</a></li>
+                        <li><a href="login">Entrar</a></li>
+                        <li><a href="register">Cadastre-se</a></li>
                         <!-- <li>
                             <div class="dropdown language-option">
                                 <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
