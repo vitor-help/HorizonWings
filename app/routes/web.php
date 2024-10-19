@@ -128,10 +128,16 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/index2', function () {
+Route::get('/sobre_nos', function () {
     if(auth()->user()){
         auth()->user()->assignRole('admin');
     }
-    return view('index2');
+    return view('sobre_nos');
 });
 
+Route::get('/politica', function () {
+    if(auth()->user()){
+        auth()->user()->assignRole('admin');
+    }
+    return view('politica');
+});

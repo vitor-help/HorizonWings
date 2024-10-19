@@ -6,21 +6,21 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-6">
                     <ul class="topbar-list">
-                        <li>
+                        <!-- <li>
                             <a href="#!"><i class="fab fa-facebook"></i></a>
                             <a href="#!"><i class="fab fa-twitter-square"></i></a>
                             <a href="#!"><i class="fab fa-instagram"></i></a>
                             <a href="#!"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li><a href="#!"><span>+011 234 567 89</span></a></li>
-                        <li><a href="#!"><span>contact@domain.com</span></a></li>
+                        </li> -->
+                        <!-- <li><a href="#!"><span>+011 234 567 89</span></a></li> -->
+                        <li><a href="#!"><span>assistance@horizonwings.com</span></a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <ul class="topbar-others-options">
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Sign up</a></li>
-                        <li>
+                        <li><a href="login.html">Entrar</a></li>
+                        <li><a href="register.html">Cadastre-se</a></li>
+                        <!-- <li>
                             <div class="dropdown language-option">
                                 <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false">
@@ -45,7 +45,7 @@
                                     <a class="dropdown-item" href="#">URO</a>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -59,7 +59,14 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/img/logo.png" alt="logo">
+                            <img id="logo" src="public/assets/img/logo_black.png" alt="logo"> 
+                            <!-- img {
+                                  max-width: 10%;
+                                  height: auto;
+                                              } -->
+
+                            
+
                         </a>
                     </div>
                 </div>
@@ -74,11 +81,11 @@
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="http://localhost/" class="nav-link active">
                                     Home
-                                    <i class="fas fa-angle-down"></i>
+                                    <!-- <i class="fas fa-angle-down"></i> -->
                                 </a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link">Home One</a>
                                     </li>
@@ -121,14 +128,14 @@
                                     <li class="nav-item">
                                         <a href="index-14.html" class="nav-link">Home fourteen</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
-                                    Categories
-                                    <i class="fas fa-angle-down"></i>
+                                <a href="http://localhost/sobre_nos#!" class="nav-link">
+                                    Sobre Nós
+                                    <!-- <i class="fas fa-angle-down"></i> -->
                                 </a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="#" class="nav-link">
                                             Tours
@@ -291,14 +298,14 @@
                                             </li>
                                         </ul>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    Pages
-                                    <i class="fas fa-angle-down"></i>
+                                    Contato
+                                    <!-- <i class="fas fa-angle-down"></i> -->
                                 </a>
-                                <ul class="dropdown-menu">
+                                <!-- <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a href="about.html" class="nav-link">About</a>
                                     </li>
@@ -345,9 +352,9 @@
                                     <li class="nav-item">
                                         <a href="error.html" class="nav-link">404 Error</a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">Dashboard <i class="fas fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -375,8 +382,8 @@
                                         <a href="notification.html" class="nav-link">Notifications</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
+                            </li> -->
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">News <i class="fas fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -398,8 +405,8 @@
                                         <a href="news-details-v2.html" class="nav-link">News Details v2</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="nav-item">
+                            </li> -->
+                            <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">Contact <i class="fas fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -409,17 +416,17 @@
                                         <a href="contact-v2.html" class="nav-link">Contact v2</a>
                                     </li>
                                 </ul>
-                            </li>
+                            </li> -->
                         </ul>
                         <div class="others-options d-flex align-items-center">
                             <div class="option-item">
                                 <a href="#" class="search-box">
-                                    <i class="bi bi-search"></i>
+                                    <!-- <i class="bi bi-search"></i> -->
                                 </a>
                             </div>
-                            <div class="option-item">
+                            <!-- <div class="option-item">
                                 <a href="become-vendor.html" class="btn  btn_navber">Become a partner</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </nav>
