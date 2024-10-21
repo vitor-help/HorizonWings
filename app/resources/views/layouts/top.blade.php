@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="main-responsive-menu">
                     <div class="logo">
-                        <a href="index.html">
+                        <!-- <a href="#"> -->
                             <img id="logo" src="public/assets/img/logo_black.png" alt="logo"> 
                             <!-- img {
                                   max-width: 10%;
