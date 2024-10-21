@@ -57,23 +57,23 @@
                         </div>
 
                         <div class="row mb-3">
-    <label for="gender" class="col-md-4 col-form-label text-md-end">{{ __('Sexo') }}</label>
+    <label for="sexo" class="col-md-4 col-form-label text-md-end">{{ __('Sexo') }}</label>
 
     <div class="col-md-6">
         <div class="form-check">
-            <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="male" value="male" {{ old('gender') == 'male' ? 'checked' : '' }} required>
+            <input class="form-check-input @error('sexo') is-invalid @enderror" type="radio" name="sexo" id="male" value="masculino" {{ old('sexo') == 'male' ? 'checked' : '' }} required>
             <label class="form-check-label" for="male">
                 {{ __('Masculino') }}
             </label>
         </div>
         <div class="form-check">
-            <input class="form-check-input @error('gender') is-invalid @enderror" type="radio" name="gender" id="female" value="female" {{ old('gender') == 'female' ? 'checked' : '' }} required>
+            <input class="form-check-input @error('sexo') is-invalid @enderror" type="radio" name="sexo" id="female" value="feminino" {{ old('sexo') == 'female' ? 'checked' : '' }} required>
             <label class="form-check-label" for="female">
                 {{ __('Feminino') }}
             </label>
         </div>
 
-        @error('gender')
+        @error('sexo')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
