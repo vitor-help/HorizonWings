@@ -111,7 +111,7 @@
                         <h3>Roma</h3>
                         <p>140+ Passeios</p>
                     </div>
-                    <div class="trending_item">
+                    <div class="trending_item">reservar
                         <div class="treding_img">
                             <!-- <a href="top-destinations.html"> -->
                                 <img src="public/assets/img/home-seven/destination/bangkok.png"

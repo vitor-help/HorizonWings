@@ -53,14 +53,11 @@
                                             <li class="nav-item" role="presentation">
                                                 <button class="nav-link active" id="oneway-tab" data-bs-toggle="tab"
                                                     data-bs-target="#oneway_flight" type="button" role="tab"
-                                                    aria-controls="oneway_flight" aria-selected="true">Só Ida
+                                                    aria-controls="oneway_flight" aria-selected="true">ida e volta
                                                     </button>
                                             </li>
                                             <li class="nav-item" role="presentation">
-                                                <button class="nav-link" id="roundtrip-tab" data-bs-toggle="tab"
-                                                    data-bs-target="#roundtrip" type="button" role="tab"
-                                                    aria-controls="roundtrip"
-                                                    aria-selected="false">Ida e Volta</button>
+
                                             </li>
                                             <!-- <li class="nav-item" role="presentation">
                                                 <button class="nav-link" id="multi_city-tab" data-bs-toggle="tab"
@@ -78,12 +75,18 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="oneway_search_form">
-                                                <form action="#!">
+                                            <form action="{{ url('/reservar') }}" method="POST">
+                                                    @csrf
                                                     <div class="row">
                                                         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                                                             <div class="flight_Search_boxed">
                                                                 <p>De</p>
-                                                                <input type="text" value="New York">
+                                                                <select name="origem" id="origem">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
                                                                 <!-- <span>JFK - John F. Kennedy International...</span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-departure"></i>
@@ -93,7 +96,12 @@
                                                         <div class="col-lg-3 col-md-6 col-sm-12 col-12">
                                                             <div class="flight_Search_boxed">
                                                                 <p>Para</p>
-                                                                <input type="text" value="London ">
+                                                                <select name="destino" id="destino">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="opel">Opel</option>
+    <option value="audi">Audi</option>
+  </select>
                                                                 <!-- <span>LCY, London city airport </span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-arrival"></i>
@@ -108,8 +116,13 @@
                                                                 <div class="flight_Search_boxed date_flex_area">
                                                                     <div class="Journey_date">
                                                                         <p>Data de Partida</p>
-                                                                        <input type="date" value="2022-05-05">
+                                                                        <input type="date" name="data_partida" value="2022-05-05">
                                                                         <!-- <span>Thursday</span> -->
+                                                                    </div>
+                                                                    <div class="Journey_date">
+                                                                        <p>Retorno</p>
+                                                                        <input type="date" name="data_retorno" value="2022-05-08">
+                                                                        <!-- <span>Saturday</span> -->
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -124,58 +137,38 @@
                                                                         id="dropdownMenuButton1"
                                                                         data-bs-toggle="dropdown"
                                                                         aria-expanded="false">
-                                                                        0 Passageiros
+                                                                        Passageiros
                                                                     </button>
                                                                     <div class="dropdown-menu dropdown_passenger_info"
                                                                         aria-labelledby="dropdownMenuButton2">
                                                                         <div class="traveller-calulate-persons">
                                                                             <div class="passengers">
-                                                                                <h6>Passageiross</h6>
+                                                                                <h6>Passageiros</h6>
                                                                                 <div class="passengers-types">
                                                                                     <div class="passengers-type">
-                                                                                        <div class="text"><span
-                                                                                                class="count pcount">2</span>
+                                                                                        <div class="text"><span 
+                                                                                                class="count pcount"></span>
                                                                                             <div class="type-label">
+                                                                                                <input type="numeric" name="adulto"/>
                                                                                                 <p>Adulto</p>
                                                                                                 <span>13+
                                                                                                     anos</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="button-set">
-                                                                                            <button type="button"
-                                                                                                class="btn-add">
-                                                                                                <i
-                                                                                                    class="fas fa-plus"></i>
-                                                                                            </button>
-                                                                                            <button type="button"
-                                                                                                class="btn-subtract">
-                                                                                                <i
-                                                                                                    class="fas fa-minus"></i>
-                                                                                            </button>
-                                                                                        </div>
+                                                                                
                                                                                     </div>
                                                                                     <div class="passengers-type">
                                                                                         <div class="text"><span
-                                                                                                class="count ccount">0</span>
+                                                                                                class="count ccount"></span>
                                                                                             <div class="type-label">
                                                                                                 <p
                                                                                                     class="fz14 mb-xs-0">
                                                                                                     Criança
                                                                                                 </p><span>Até 12 anos</span>
+                                                                                                <input type="numeric" name="crianca"/>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="button-set">
-                                                                                            <button type="button"
-                                                                                                class="btn-add-c">
-                                                                                                <i
-                                                                                                    class="fas fa-plus"></i>
-                                                                                            </button>
-                                                                                            <button type="button"
-                                                                                                class="btn-subtract-c">
-                                                                                                <i
-                                                                                                    class="fas fa-minus"></i>
-                                                                                            </button>
-                                                                                        </div>
+                                                                                   
                                                                                     </div>
                                                                                     <div class="passengers-type">
                                                                                         <!-- <div class="text"><span
@@ -207,12 +200,10 @@
                                                                             <div class="cabin-selection">
                                                                                 <h6>Classes</h6>
                                                                                 <div class="cabin-list">
-                                                                                    <button type="button"
-                                                                                        class="label-select-btn">
-                                                                                        <span
-                                                                                            class="muiButton-label">Economica
-                                                                                        </span>
-                                                                                    </button>
+                                                                                <select name="classe" id="classe">
+    <option value="economica">economica</option>
+    <option value="primeira">primeira</option>
+  </select>
                                                                                     <!-- <button type="button"
                                                                                         class="label-select-btn active">
                                                                                         <span
@@ -220,11 +211,7 @@
                                                                                             Business
                                                                                         </span>
                                                                                     </button> -->
-                                                                                    <button type="button"
-                                                                                        class="label-select-btn">
-                                                                                        <span
-                                                                                            class="MuiButton-label">Primeira Classe </span>
-                                                                                    </button>
+
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -234,8 +221,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="top_form_search_button">
-                                                            <button class="btn btn_theme btn_md">Buscar
-
+                                                            <button class="btn btn_theme btn_md">Reservar
                                                             </button>
                                                         </div>
                                                     </div>
@@ -254,7 +240,12 @@
                                                         <div class="col-lg-3  col-md-6 col-sm-12 col-12">
                                                             <div class="flight_Search_boxed">
                                                                 <p>De</p>
-                                                                <input type="text" value="New York">
+                                                                <select name="destino" id="destino">
+                                                                    <option value="volvo">Volvo</option>
+                                                                    <option value="saab">Saab</option>
+                                                                    <option value="opel">Opel</option>
+                                                                    <option value="audi">Audi</option>
+                                                                </select>
                                                                 <!-- <span>JFK - John F. Kennedy International...</span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-departure"></i>
@@ -264,7 +255,12 @@
                                                         <div class="col-lg-3  col-md-6 col-sm-12 col-12">
                                                             <div class="flight_Search_boxed">
                                                                 <p>Para</p>
-                                                                <input type="text" value="London ">
+                                                                <select name="destino" id="destino">
+                                                                    <option value="volvo">Volvo</option>
+                                                                    <option value="saab">Saab</option>
+                                                                    <option value="opel">Opel</option>
+                                                                    <option value="audi">Audi</option>
+                                                                </select>
                                                                 <!-- <span>LCY, London city airport </span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-arrival"></i>
@@ -279,12 +275,12 @@
                                                                 <div class="flight_Search_boxed date_flex_area">
                                                                     <div class="Journey_date">
                                                                         <p>Data de Partida</p>
-                                                                        <input type="date" value="2022-05-05">
+                                                                        <input type="date" name="data_partida" value="2022-05-05">
                                                                         <!-- <span>Thursday</span> -->
                                                                     </div>
                                                                     <div class="Journey_date">
                                                                         <p>Retorno</p>
-                                                                        <input type="date" value="2022-05-08">
+                                                                        <input type="date" name="data_retorno" value="2022-05-08">
                                                                         <!-- <span>Saturday</span> -->
                                                                     </div>
                                                                 </div>
@@ -300,7 +296,7 @@
                                                                         id="dropdownMenuButton3"
                                                                         data-bs-toggle="dropdown"
                                                                         aria-expanded="false">
-                                                                        0 Passageiros
+                                                                         Passageiros
                                                                     </button>
                                                                     <div class="dropdown-menu dropdown_passenger_info"
                                                                         aria-labelledby="dropdownMenuButton4">
@@ -316,18 +312,6 @@
                                                                                                 <span>13+ Anos</span>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div class="button-set">
-                                                                                            <button type="button"
-                                                                                                class="btn-add">
-                                                                                                <i
-                                                                                                    class="fas fa-plus"></i>
-                                                                                            </button>
-                                                                                            <button type="button"
-                                                                                                class="btn-subtract">
-                                                                                                <i
-                                                                                                    class="fas fa-minus"></i>
-                                                                                            </button>
-                                                                                        </div>
                                                                                     </div>
                                                                                     <div class="passengers-type">
                                                                                         <div class="text"><span
@@ -338,18 +322,6 @@
                                                                                                     Criança
                                                                                                 </p><span> Até 12 anos</span>
                                                                                             </div>
-                                                                                        </div>
-                                                                                        <div class="button-set">
-                                                                                            <button type="button"
-                                                                                                class="btn-add-c">
-                                                                                                <i
-                                                                                                    class="fas fa-plus"></i>
-                                                                                            </button>
-                                                                                            <button type="button"
-                                                                                                class="btn-subtract-c">
-                                                                                                <i
-                                                                                                    class="fas fa-minus"></i>
-                                                                                            </button>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="passengers-type">
@@ -410,7 +382,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="top_form_search_button">
-                                                        <button class="btn btn_theme btn_md">Buscar</button>
+                                                        <button class="btn btn_theme btn_md">Reservar</button>
                                                     </div>
                                                 </form>
                                             </div>

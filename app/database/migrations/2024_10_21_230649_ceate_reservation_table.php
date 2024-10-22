@@ -14,14 +14,15 @@ class CeateReservationTable extends Migration
     public function up()
     {
         Schema::create('reservation', function (Blueprint $table) {
-            $table->increments("id_reserva");
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->string('sexo'); // Adicionando campo de sexo
-            $table->string('telefone'); // Adicionando campo de telefone
-            $table->rememberToken();
+            $table->increments('id_reserva');
+            $table->string('origem');
+            $table->string('destino');
+            $table->string('ticket');
+            $table->date('data_retorno')->nullable();
+            $table->date('data_partida');
+            $table->integer('adulto');
+            $table->integer('crianca')->nullable();
+            $table->string('classe');
             $table->timestamps();
         });
     }
