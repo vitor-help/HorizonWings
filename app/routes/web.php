@@ -121,12 +121,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 #DAQUI PRA BAIXO É NÓIS
 
-Route::get('/', function () {
-    if(auth()->user()){
-        auth()->user()->assignRole('admin');
-    }
-    return view('index');
-});
+Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('index');
+Route::post('/reservar', [App\Http\Controllers\IndexController::class, 'criar_reserva']);
+
+//Route::get('/', function () {
+   // if(auth()->user()){
+        //auth()->user()->assignRole('admin');
+   // }
+   // return view('index');
+//});
 
 Route::get('/sobre_nos', function () {
     if(auth()->user()){
