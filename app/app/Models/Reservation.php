@@ -10,6 +10,7 @@ class Reservation extends Model
     use HasFactory;
     protected $table="reservation";
     protected $fillable = [
+        'id_usuario',
         'id_reserva',
         'origem',
         'destino',
@@ -20,4 +21,13 @@ class Reservation extends Model
         'ticket',
         'classe',
     ];
+
+    public function consultarReservas(){
+        try {
+            return  Reservation::where('id_usuario', auth()->id())->get();
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+    }
+    
 }

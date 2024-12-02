@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CeateReservationTable extends Migration
+class CreateReservationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -14,16 +14,19 @@ class CeateReservationTable extends Migration
     public function up()
     {
         Schema::create('reservation', function (Blueprint $table) {
+
             $table->increments('id_reserva');
-            $table->string('origem');
-            $table->string('destino');
-            $table->string('ticket');
+            $table->string('origem')->nullable();
+            $table->string('destino')->nullable();
+            $table->string('ticket')->nullable();
             $table->date('data_retorno')->nullable();
-            $table->date('data_partida');
-            $table->integer('adulto');
+            $table->date('data_partida')->nullable();
+            $table->integer('adulto')->nullable();
             $table->integer('crianca')->nullable();
-            $table->string('classe');
+            $table->string('classe')->nullable();
             $table->timestamps();
+            $table->unsignedBigInteger('id_usuario');
+            $table->foreign('id_usuario')->references('id')->on('users');
         });
     }
 

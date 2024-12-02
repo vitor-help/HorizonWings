@@ -82,11 +82,11 @@
                                                             <div class="flight_Search_boxed">
                                                                 <p>De</p>
                                                                 <select name="origem" id="origem">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
+                                                                    <option value="guarulhos">Guarulhos -SP</option>
+                                                                    <option value="santos_dumont">Santos Dumont - RJ</option>
+                                                                    <option value="luiz">Luíz Eduardo Magalhães - BA</option>
+                                                                    <option value="afonso_pena">Afonso Pena - PR</option>
+                                                                </select>
                                                                 <!-- <span>JFK - John F. Kennedy International...</span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-departure"></i>
@@ -97,11 +97,11 @@
                                                             <div class="flight_Search_boxed">
                                                                 <p>Para</p>
                                                                 <select name="destino" id="destino">
-    <option value="volvo">Volvo</option>
-    <option value="saab">Saab</option>
-    <option value="opel">Opel</option>
-    <option value="audi">Audi</option>
-  </select>
+                                                                    <option value="guarulhos">Guarulhos - SP</option>
+                                                                    <option value="santos_dumont">Santos Dumont - RJ</option>
+                                                                    <option value="luiz">Luíz Eduardo Magalhães - BA</option>
+                                                                    <option value="afonso_pena">Afonso Pena - PR</option>
+                                                                </select>
                                                                 <!-- <span>LCY, London city airport </span> -->
                                                                 <div class="plan_icon_posation">
                                                                     <i class="fas fa-plane-arrival"></i>
@@ -130,7 +130,7 @@
                                                         <div class="col-lg-2  col-md-6 col-sm-12 col-12">
                                                             <div
                                                                 class="flight_Search_boxed dropdown_passenger_area">
-                                                                <p>Passageiros, Classe</p>
+                                                                <p>Passageiros</p>
                                                                 <div class="dropdown">
                                                                     <button class="dropdown-toggle final-count"
                                                                         data-toggle="dropdown" type="button"
@@ -144,66 +144,15 @@
                                                                         <div class="traveller-calulate-persons">
                                                                             <div class="passengers">
                                                                                 <h6>Passageiros</h6>
-                                                                                <div class="passengers-types">
-                                                                                    <div class="passengers-type">
-                                                                                        <div class="text"><span 
-                                                                                                class="count pcount"></span>
-                                                                                            <div class="type-label">
-                                                                                                <input type="numeric" name="adulto"/>
-                                                                                                <p>Adulto</p>
-                                                                                                <span>13+
-                                                                                                    anos</span>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                
-                                                                                    </div>
-                                                                                    <div class="passengers-type">
-                                                                                        <div class="text"><span
-                                                                                                class="count ccount"></span>
-                                                                                            <div class="type-label">
-                                                                                                <p
-                                                                                                    class="fz14 mb-xs-0">
-                                                                                                    Criança
-                                                                                                </p><span>Até 12 anos</span>
-                                                                                                <input type="numeric" name="crianca"/>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                   
-                                                                                    </div>
-                                                                                    <div class="passengers-type">
-                                                                                        <!-- <div class="text"><span
-                                                                                                class="count incount">0</span>
-                                                                                            <div class="type-label">
-                                                                                                <p
-                                                                                                    class="fz14 mb-xs-0">
-                                                                                                    Infant
-                                                                                                </p><span>Less
-                                                                                                    than 2
-                                                                                                    yrs</span>
-                                                                                            </div>
-                                                                                        </div> -->
-                                                                                        <div class="button-set">
-                                                                                            <button type="button"
-                                                                                                class="btn-add-in">
-                                                                                                <i
-                                                                                                    class="fas fa-plus"></i>
-                                                                                            </button>
-                                                                                            <button type="button"
-                                                                                                class="btn-subtract-in">
-                                                                                                <i
-                                                                                                    class="fas fa-minus"></i>
-                                                                                            </button>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
+                                                                                <input type="numeric" name="adulto"/>
                                                                             </div>
                                                                             <div class="cabin-selection">
                                                                                 <h6>Classes</h6>
                                                                                 <div class="cabin-list">
                                                                                 <select name="classe" id="classe">
-    <option value="economica">economica</option>
-    <option value="primeira">primeira</option>
-  </select>
+                                                                                    <option value="economica">economica</option>
+                                                                                    <option value="primeira">primeira</option>
+                                                                                </select>
                                                                                     <!-- <button type="button"
                                                                                         class="label-select-btn active">
                                                                                         <span
@@ -241,10 +190,10 @@
                                                             <div class="flight_Search_boxed">
                                                                 <p>De</p>
                                                                 <select name="destino" id="destino">
-                                                                    <option value="volvo">Volvo</option>
-                                                                    <option value="saab">Saab</option>
-                                                                    <option value="opel">Opel</option>
-                                                                    <option value="audi">Audi</option>
+                                                                    <option value="volvo">São Paulo</option>
+                                                                    <option value="saab">Rio de Janeiro</option>
+                                                                    <option value="opel">New York</option>
+                                                                    <option value="audi">Londres</option>
                                                                 </select>
                                                                 <!-- <span>JFK - John F. Kennedy International...</span> -->
                                                                 <div class="plan_icon_posation">
@@ -256,10 +205,10 @@
                                                             <div class="flight_Search_boxed">
                                                                 <p>Para</p>
                                                                 <select name="destino" id="destino">
-                                                                    <option value="volvo">Volvo</option>
-                                                                    <option value="saab">Saab</option>
-                                                                    <option value="opel">Opel</option>
-                                                                    <option value="audi">Audi</option>
+                                                                    <option value="volvo">São Paulo</option>
+                                                                    <option value="saab">Rio de Janeiro</option>
+                                                                    <option value="opel">New York</option>
+                                                                    <option value="audi">Londres</option>
                                                                 </select>
                                                                 <!-- <span>LCY, London city airport </span> -->
                                                                 <div class="plan_icon_posation">
