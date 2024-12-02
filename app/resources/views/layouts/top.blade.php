@@ -75,13 +75,13 @@
         <div class="main-navbar">
             <div class="container">
                 <nav class="navbar navbar-expand-md navbar-light">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="/">
                         <img src="public/assets/img/logo_black.png" alt="logo">
                     </a>
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a href="http://localhost/" class="nav-link active">
+                                <a href="/" class="nav-link active">
                                     Home
                                     <!-- <i class="fas fa-angle-down"></i> -->
                                 </a>

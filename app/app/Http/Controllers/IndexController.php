@@ -21,6 +21,8 @@ class IndexController extends Controller
          // Adiciona o campo 'ticket' aos dados do request
         $dados['ticket'] = $ticket;
 
+        $dados['id_usuario'] = auth()->id();
+
 
         Reservation::create($dados);
         return view('index');
@@ -39,5 +41,10 @@ class IndexController extends Controller
         }
 
         return $ticket;
+    }
+
+    public function minhasReservas(){
+        $dados['reservas'] = Reservation::consultarReservas();
+        return view('minhas-reservas', compact('dados'));
     }
 }

@@ -145,3 +145,5 @@ Route::get('/politica', function () {
     }
     return view('politica');
 });
+
+Route::get('/minhas-reservas', [App\Http\Controllers\IndexController::class, 'minhasReservas']);
