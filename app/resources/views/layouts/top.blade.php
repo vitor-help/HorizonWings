@@ -354,6 +354,60 @@
                                     </li>
                                 </ul> -->
                             </li>
+                            <li class="nav-item">
+                                <a href="/minhas-reservas" class="nav-link">
+                                    Minhas Reservas
+                                    <!-- <i class="fas fa-angle-down"></i> -->
+                                </a>
+                                <!-- <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="about.html" class="nav-link">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="tour-guides.html" class="nav-link">Team</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="testimonials.html" class="nav-link">Testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="faqs.html" class="nav-link">FAQ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="booking-confirmation.html" class="nav-link">Booking
+                                            Confirmation</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="become-expert.html" class="nav-link">Become Expert </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">User Pages</a>
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item">
+                                                <a href="login.html" class="nav-link">Login</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="register.html" class="nav-link">Register</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="forgot-password.html" class="nav-link">Forget Password</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="verify-otp.html" class="nav-link">Verify OTP</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="reset-password.html" class="nav-link">Reset Password</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="error.html" class="nav-link">404 Error</a>
+                                    </li>
+                                </ul> -->
+                            </li>
                             <!-- <li class="nav-item">
                                 <a href="#" class="nav-link">Dashboard <i class="fas fa-angle-down"></i></a>
                                 <ul class="dropdown-menu">
