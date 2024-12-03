@@ -29,5 +29,8 @@ class Reservation extends Model
             throw $th;
         }
     }
-    
+
+    public function criar_reserva($dados){
+        Reservation::create($dados);
+    }
 }

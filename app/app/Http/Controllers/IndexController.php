@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\reservation;
+use App\Models\Reservation;
 
 class IndexController extends Controller
 {
@@ -23,15 +23,14 @@ class IndexController extends Controller
 
         $dados['id_usuario'] = auth()->id();
 
-
-        Reservation::create($dados);
+        Reservation::criar_reserva($dados);
+        
         return view('index');
     }
 
 
     // Função para gerar o ticket aleatório
-    private function gerarTicketAleatorio($tamanho = 6)
-    {
+    private function gerarTicketAleatorio($tamanho = 6){
         $caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         $ticket = '';
         $maxIndex = strlen($caracteres) - 1;
